@@ -325,3 +325,12 @@
   value:
     os: ubuntu-trusty
     version: "3586.7"
+- path: /releases/name=loggregator-agent/url
+  type: replace
+  value: https://storage.googleapis.com/cf-deployment-compiled-releases/loggregator-agent-1.0-ubuntu-trusty-3586.7-20180521-182259-070465419.tgz
+- path: /releases/name=loggregator-agent/version
+  type: replace
+  value: "1.0"
+- path: /releases/name=loggregator-agent/sha1
+  type: replace
+  value: 944fffeb1b21666b9a405815987e0a28ef72d750
