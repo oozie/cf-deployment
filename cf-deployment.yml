@@ -1669,10 +1669,10 @@ releases:
   url: https://bosh.io/d/github.com/cloudfoundry/loggregator-release?v=102.1
   version: "102.1"
   sha1: 61949aff688e368a11d03daa18855800517666d3
-- name: test
-  url: https://bosh.io/d/github.com/cppforlife/test-release?v=1
-  version: "1"
-  sha1: d80730afc86bfaa6d26831657e468fc3304103ca
+- name: loggregator-agent
+  version: "1.0"
+  url: "https://bosh.io/d/github.com/cloudfoundry/loggregator-agent-release?v=1.0"
+  sha1: "aa70e3bc95e25fe86ab00f3b698216a24a44c9d5"
 - name: nats
   url: https://bosh.io/d/github.com/cloudfoundry/nats-release?v=24
   version: "24"
