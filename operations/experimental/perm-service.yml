@@ -27,7 +27,7 @@
           tls:
             required: true
             ca_certs:
-            - ((pxc_server_ca.certificate))
+            - ((mysql_server_certificate.ca))
 
 # Changes to other instance groups
 - type: replace
