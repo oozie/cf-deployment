@@ -15,7 +15,7 @@
       release: perm
       properties:
         log_level: debug
-        tls: ((perm_tls))
+        tls: ((perm-tls))
         sql:
           db:
             driver: mysql
@@ -48,7 +48,7 @@
     enabled: true
     query_enabled: true
     ca_certs:
-    - ((perm_tls_ca.certificate))
+    - ((perm-tls-ca.certificate))
 
 - type: replace
   path: /addons/name=bosh-dns/jobs/name=bosh-dns/properties/aliases/perm.service.cf.internal?
@@ -68,7 +68,7 @@
 - type: replace
   path: /variables/-
   value:
-    name: perm_tls_ca
+    name: perm-tls-ca
     type: certificate
     options:
       is_ca: true
@@ -77,10 +77,10 @@
 - type: replace
   path: /variables/-
   value:
-    name: perm_tls
+    name: perm-tls
     type: certificate
     options:
-      ca: perm_tls_ca
+      ca: perm-tls-ca
       common_name: perm.service.cf.internal
       extended_key_usage:
       - client_auth
@@ -150,7 +150,7 @@
 
         perm:
           ca_certs:
-          - ((perm_tls_ca.certificate))
+          - ((perm-tls-ca.certificate))
         sql:
           db:
             driver: mysql
